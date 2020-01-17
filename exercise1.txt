@@ -1,0 +1,46 @@
+1) pwd | ls -al.
+
+2) mkdir intern-2020 rapidops-2020
+
+3) touch intern-2020/dev.txt | intern-2020/helloworld.txt
+
+4) /intern-2020/ nano dev.txt
+        -I am an IT Engineer. 
+   /intern-2020/ nano helloworld.txt
+        -echo "helloworld"
+
+5) cp intern-2020/dev.txt intern-2020/hellworld.txt rapidops-2020/
+
+
+6) mv dev.txt dev1.txt | mv helloworld.txt helloworld1.txt
+
+
+7) chmod u-w dev1.txt | chmod g+w helloworld1.txt
+
+
+
+8) tar -cvf dev1.tar helloworld1.txt | tar -cvf helloworld1.tar helloworld1.txt  - creating tar file
+
+   mv dev1.tar ../intern-2020 | mv helloworld1.tar ../intern-2020  -  shifting from rapidops folder to intern folder
+
+
+9) mv dev1.tar dev2.tar
+
+
+10) find -name dev.txt
+
+
+11) top
+
+
+12) free
+
+
+13) ps -ef | i(all ideal process will stop)
+
+
+14) wget https://releases.mattermost.com/desktop/4.3.2/mattermost-desktop-4.3.2-linux-amd64.deb
+
+
+15) ifconfig
+
