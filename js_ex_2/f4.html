@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>
+            Shuffling of array element
+        </title>
+
+    </head>
+    <body>
+        <script>
+            let array = [1,2,3,4,5,6,7,8];
+            let arrShuffle = function(arr)
+            {
+                let newPos;
+                let temp;
+                for(let i=0;i<arr.length;i++)
+                {
+                    newPos=Math.floor(Math.random()*(i+1));
+                    
+                    temp=arr[i];
+                    arr[i]=arr[newPos];
+                    arr[newPos]=temp;
+                    
+
+                }
+                return arr;
+
+            };
+            let display=arrShuffle(array);
+            document.write(display);
+
+
+            </script>
+    </body>
+</html>

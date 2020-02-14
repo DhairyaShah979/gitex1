@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            UNIX CONVERSION
+        </title>
+    </head>
+    <body>
+        <script>
+            function unix_conversion(t)
+            {
+                let d = new Date(t*1000);
+                let hours= d.getHours();
+                let minutes=d.getMinutes();
+                let seconds=d.getSeconds();
+                return "The Hours Minutes and Seconds is " +hours+ " " +minutes+ " " +seconds;
+
+
+            }
+            let unix=unix_conversion(1581423280);
+            document.write(unix);
+            </script>
+    </body>
+</html>
