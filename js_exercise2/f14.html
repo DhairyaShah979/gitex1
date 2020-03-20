@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Remove Html Tag
+        </title>
+
+    </head>
+    <body>
+        <script>
+
+            function removeTags(str) 
+            {
+                if ((str===null) || (str===''))
+                {
+                    return false;
+
+                }
+                
+                else
+                {
+                    str = str.toString();
+                    
+                }
+                return str.replace( /(^([^<>]*)$)/ig, '');
+             }
+            document.write(removeTags('<html> <body> Hello Dhairya'));;
+
+        </script>
+    </body>
+</html>

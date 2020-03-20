@@ -1,0 +1,73 @@
+
+<html>
+    <head>
+        <title>Display Time and Date</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script>
+            function renderTime()
+{
+    //Date
+    let myDate = new Date();
+    let year = myDate.getFullYear();
+    let month = myDate.getMonth();
+    let daym = myDate.getDate();
+    let montharray = new Array("January","Febuarary","March","April","May","June","July","August","September","October","November","December");
+
+    //Time
+     let currentTime = new Date();
+     let h = currentTime.getHours();
+     let m = currentTime.getMinutes();
+     let s = currentTime.getSeconds();
+     if(h==24)
+     {
+         h=0;
+     }
+     else if(h>12)
+     {
+         h=h-0;
+     }
+     if(h<10)
+     {
+         h="0" + h;
+     }
+
+     if(m<10)
+     {
+         m="0" + m;
+     }
+
+     if(s<10)
+     {
+         s="0" + s;
+     }
+
+     let myClock = document.getElementById("clockDisplay");
+     myClock.textContent = " " +h+ ":" +m+ ":" +s+ " " +daym+ " " +montharray[month]+ ":" +year;
+     myClock.textContent = " " +h+ ":" +m+ ":" +s+ " " +daym+ " " +montharray[month]+ ":" +year;
+     setTimeout("renderTime()",1000);
+}
+
+
+        </script>
+<!-- <script type="text/javascript" src="javascript/script.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+        
+
+    </head>
+
+    <body onload="renderTime();">
+        <div id="clockDisplay" class="container">
+            
+
+        </div>
+        
+
+            
+    </body>
+</html>

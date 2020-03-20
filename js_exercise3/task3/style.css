@@ -1,0 +1,30 @@
+.flex-container
+{
+     display:flex;
+     align-items: center;
+     justify-content: center;
+    
+
+}
+.flex-container > div
+{
+    background-color: #f1f1f1;
+    margin: 10px;
+      height: 15rem;
+      width: 15rem;
+      font-size: 30px;
+}
+#first
+{
+    padding-left: 100px;
+    padding-top: 10px;
+    background-color: cornflowerblue;
+}
+#third
+{
+    background-color: cornflowerblue;
+}
+#child
+{
+    padding-right: 20px;
+}

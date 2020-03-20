@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/2f6ed772ee.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Table</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-4">
+                <div class="input-group ">
+                    <input type="text" class="form-control firstName"  placeholder="FirstName">
+                </div>
+            </div> <br><br>
+            <div class="col-md-4">
+                <div class="input-group ">
+                    <input type="text" class="form-control lastName"  placeholder="LastName">
+                </div>
+            </div><br><br>
+            <div class="col-md-4">
+                <button type="button" onclick="addRow()" class="btn btn-primary addButton">Add</button>
+                <button type="button" onclick="updateRow()"class="btn btn-dark updateButton">Update</button>
+                <button type="button" onclick="dynamicfun()"class="btn btn-success renderButton">Render</button>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">NO.</th>
+                    <th scope="col">FirstName</th>
+                    <th scope="col">LastName</th>
+                    <th scope="col">Options</th>
+                  </tr>
+                </thead>
+                <tbody class="addHere">
+
+                </tbody>
+              </table>
+        </div>
+
+
+
+
+    </div>
+
+    
+    <script src="dynamicTable.js"></script>
+</body>
+
+</html>

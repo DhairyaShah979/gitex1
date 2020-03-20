@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        signup1234
+    </title>
+    <meta charset="UTF-8">
+ 
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      
+</head>
+    <body>
+        <div class="login-page">
+        <div class="form">
+        <h2>Signupform</h2>
+        <form class="login-form" name="signForm"  autocomplete="off" >
+            <input type="text" class="user" name='user' placeholder="enter name"><span id='spanu'></span></br>
+                <input type="email"  class="email" name='email' placeholder="enter EmailID"><span id='spane'></span><br>
+                <input type="password" class="pass1" name="pass1" placeholder="enter password"><span id='spanp1'></span>
+                <br> <input type="password" class="pass2" name="pass2" placeholder=" confirm password"><span
+                    id='spanp2'></span><br>
+                <input type="radio" class='admin' name='role' value="Admin" checked>Admin
+                <input type="radio" name='role'  class="student" value="student">Student<span id='spans'></span>
+        
+        
+        <!--<input type="button" id="btn1" value="Backtologin" id="submit" onclick="validate()"/>-->
+        <input type="submit" value="signup" onclick="signUp()" class="btn btn-primary  signUpbtn">
+        <p><a href="#" onclick="validate()">Backtologin</a><br>Already a member?</p>
+        </form>
+  <script src="login2.js"></script>
+ 
+  
+  </body>
+  </html>
+  
